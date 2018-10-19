@@ -1,11 +1,23 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+# project specific
+**/git.version.ts
+
+# dependency assets
+projects/admin/src/assets/flag
+projects/admin/src/assets/icon
+projects/admin/src/assets/worker
+
+projects/front/src/assets/flag
+projects/front/src/assets/icon
+projects/front/src/assets/worker
+
 # compiled output
 /dist
 /tmp
 /out-tsc
 
-# dependencies
+# node dependencies
 /node_modules
 
 # IDEs and editors
@@ -19,10 +31,6 @@
 
 # IDE - VSCode
 .vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 
 # misc
 /.sass-cache
@@ -37,3 +45,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+**/*-old*/**
+
